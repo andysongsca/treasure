@@ -1,0 +1,14 @@
+yarn.lock
+package-lock.json
+node_modules
+build/**
+npm-debug.log
+nohup.out
+.DS_Store
+
+.idea/**
+
+rev-manifest.json
+*.orig
+.vscode
+.jsbeautifyrc
