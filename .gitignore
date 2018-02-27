@@ -4,6 +4,7 @@ node_modules
 build/**
 npm-debug.log
 nohup.out
+dist
 .DS_Store
 
 .idea/**
