@@ -79,7 +79,8 @@ export default {
         isHoliday(date) {
             var isHoliday = false;
             this.holiday.forEach(function(v) {
-                var wo = new Date(v);
+                var temp = v.replace(/-/g, '/');
+                var wo = new Date(temp);
                 if (wo.getTime() === date.getTime()) {
                     isHoliday = true;
                 }
@@ -94,7 +95,8 @@ export default {
         isWeekendsOff(date) {
             var isWeekendsOff = false;
             this.weekendsOff.forEach(function(v) {
-                var wo = new Date(v);
+                var temp = v.replace(/-/g, '/');
+                var wo = new Date(temp);
                 if (wo.getTime() === date.getTime()) {
                     isWeekendsOff = true;
                 }
@@ -114,7 +116,7 @@ export default {
             // if (month.length < 2) month = '0' + month;
             // if (day.length < 2) day = '0' + day;
 
-            return [year, month, day].join('-');
+            return [year, month, day].join('/');
         }
 
     }
