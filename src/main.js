@@ -7,6 +7,7 @@ import { InputNumber } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
+
 Vue.config.productionTip = false
 Vue.use(MuseUI)
 Vue.use(InputNumber)

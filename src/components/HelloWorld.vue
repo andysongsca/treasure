@@ -142,6 +142,8 @@ a {
 }
 .result {
     margin: 50px auto;
+    width: 30%;
+    min-width: 323px;
     height: 90%;
     line-height: 50px;
     color: #fff;
